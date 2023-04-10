@@ -1,0 +1,21 @@
+{
+  "name": "playwrightjesa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eveliih/PlaywrightJesa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eveliih/PlaywrightJesa/issues"
+  },
+  "homepage": "https://github.com/eveliih/PlaywrightJesa#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.32.2"
+  }
+}
