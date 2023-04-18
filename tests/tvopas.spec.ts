@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { getAccessibilityIssues } from "../helpers/axeHelper";
 
 test.describe("tv-opas testit", () => {
   test.beforeEach(async ({ page }) => {
@@ -61,4 +62,15 @@ test.describe("tv-opas testit", () => {
       expect(jim).not.toBeNull();
     });
   });
+  test('Yle Areena accessibility issues', async ({ page }) => {
+    await page.goto('https://areena.yle.fi/tv/opas');
+  
+    const accessibilityIssues = await getAccessibilityIssues(page);
+    if (accessibilityIssues.length > 0) {
+      console.log(`Accessibility issues found: ${accessibilityIssues.length}`);
+      console.log(accessibilityIssues);
+    } else {
+      console.log('No accessibility issues found');
+    }
+});
 });

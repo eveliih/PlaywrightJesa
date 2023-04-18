@@ -1,7 +1,7 @@
 {
   "name": "playwrightjesa",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. Clone repo",
   "main": "index.js",
   "scripts": {},
   "repository": {
@@ -16,6 +16,17 @@
   },
   "homepage": "https://github.com/eveliih/PlaywrightJesa#readme",
   "devDependencies": {
-    "@playwright/test": "^1.32.3"
+    "@playwright/test": "^1.32.3",
+    "axe-core": "^4.7.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.6.1",
+    "@types/node": "^18.15.11",
+    "playwright": "^1.32.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   }
 }
